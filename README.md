@@ -1,4 +1,8 @@
 ﻿# Moon-Light
  <hr>
 
-**Initial Documentation**
+**Development Log:**
+- "\images\DevelopmentLog.pdf"
+
+**Figma Template:**
+- "\images\Responsive Mobile First Email.pdf"
