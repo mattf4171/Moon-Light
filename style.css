@@ -42,7 +42,7 @@ html, body {
 }
 .icon{
 	margin-top: 10px;
-	margin-left: -5px;
+	margin-left: -10px;
 }
 
 .upper-half{
@@ -98,6 +98,16 @@ html, body {
 	text-align: center;
 
 }
+/* Different layout for small screens */
+@media screen and (max-width: 765px){
+	.wrapper{
+		display: grid;
+		grid-template-columns:20% 80% 0%;
+		min-height: 100%;
+		text-align: center;
+	}
+}
+
 
 .child-container{
 	background-color: rgba(62, 60, 60, 0.3);
@@ -134,7 +144,7 @@ html, body {
 
 .img{
 	padding: 1em;
-	height: 175px;
+	height: 150px;
 	width: auto;
 }
 
@@ -234,6 +244,13 @@ box-shadow:0 0 4px rgba(0,0,0,0.5);
 	padding-left: 30px;
 	padding-right: 30px;
 }
+#smallImg{
+	height: 75px;
+	width: auto;
+	position: absolute;
+	left: 5%;
+	top: 10%;
+}
 .reply{
 	float: left;
 	padding-left: 250px;
@@ -245,3 +262,8 @@ box-shadow:0 0 4px rgba(0,0,0,0.5);
 	padding-right: 60px;
 }
 
+#small-screen-left{
+	border: 1px dashed red;
+	width: 100%;
+
+}
