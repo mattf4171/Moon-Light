@@ -21,15 +21,28 @@
 	<main>
 		<!-- Grid wrapper for nav container(left); middle email search container; and right email full message container -->
 		<nav class="wrapper">
-			  <div class="col-lg child-container" id="left">
+			  <div class="col-12 col-md-8 child-container container-md" id="left">
 				<!-- Left container -->
 
 				<div class="nav">
-					<img src="images/AISoftware.png" class="img-responsive img" alt="Your Profile Icon and below is an accordion">
+					<div class="d-lg-none">
+						<img src="images/AISoftware.png" id="smallImg" class="img-responsive img" alt="Your Profile Icon and below is an accordion">
+					</div>
+					<div class="d-none d-lg-block">
+						<img src="images/AISoftware.png" class="img-responsive img" alt="Your Profile Icon and below is an accordion">
+					</div>
 				</div>
-				<button class="compose btn btn-lg">
-					COMPOSE
-				</button>
+				<div class="d-none d-lg-block">
+					<button class="compose btn btn-lg container">
+						<p>COMPOSE</p>
+					</button>
+				</div>
+				<div class="d-lg-none">
+					<button class="compose btn btn-sm container">
+						<p>COMPOSE</p>
+					</button>
+				</div>
+	
 				<div class="nav-row">
 					<h3 class="subjects">Inbox (3)</h3>
 					<h3 class="subjects">Sent Mail</h3>
@@ -39,7 +52,7 @@
 				</div>
 
 			  </div>
-			  <div class="col-lg child-container" id="mid">
+			  <div class="col-md d-block d-lg-block py-md-3 pl-md-5 bd-toc child-container bd-content grid-template-columns-" id="mid">
 				<!-- Center container -->
 		
 				<div class="container my-container flex-column">
@@ -157,7 +170,7 @@
 
 			  </div>
 
-			  <div class="col-lg child-container" id="right">
+			  <div class="col-lg-9 d-none d-md-block child-container" id="right">
 				<!-- Right container -->
 				<div class="address">
 					<p>To: matthew.fernandez.cohort231@gmail.com<br>From: noreply@linkedin.com</p>
@@ -192,10 +205,12 @@
 							</button> 
 					</div>
 				</div>
-
+			  
 			  </div>
 		</nav>
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
